@@ -1,0 +1,131 @@
+{
+    "contact": [
+        {
+            "phone": "971-344-8315",
+            "email": "nicholasboss0914@gmail.com",
+            "location":"Rexburg, ID"
+        }
+    ],
+	"education": [
+		{
+			"degree": "B.S. in Computer Science",
+			"school": "Brigham Young University - Idaho",
+            "location": "Rexburg, ID",
+			"time": "September 2020 - Current",
+			"gpa": "3.77",
+			"expected": "Spring 2025"
+		}
+	],
+	"dss": [
+		{
+			"project": "Onsemi",
+			"position": "Team Member",
+			"description": "Assisted Onsemi by web scraping articles that could help them identify their standing against other companies."
+		},
+		{
+			"project": "Madison Fire Department",
+			"position": "Project Manager",
+			"description": "Currently helping the Madison Fire Department by creating a web application that would allow them to track their inventory."
+		}
+	],
+	"skills": [
+		{
+			"skill": "MySQL"
+		},
+		{
+			"skill": "HTML"
+		},
+		{
+			"skill": "CSS"
+		},
+		{
+			"skill": "JavaScript"
+		},
+		{
+			"skill": "C#"
+		},
+		{
+			"skill": "PL/SQL (Read and Debug)"
+		},
+		{
+			"skill": "PL/pgSQL (Read and Debug)"
+		},
+		{
+			"skill": "Python"
+		},
+		{
+			"skill": "React Native"
+		},
+		{
+			"skill": "Node.js"
+		},
+		{
+			"skill": "Spanish (Fluent)"
+		}
+	],
+	"professional": [
+		{
+			"name": "Brigham Young University - Idaho Teaching Assistant",
+			"time": "Sept. 2021 - Present",
+			"description": [
+				{
+					"para": "Helped approximately 700+ students learn concepts in the CIT 111 (Intro to Databases) and WDD (Web Fundamentals) courses"
+				},
+				{
+					"para": "Created a Concept Workshop that helped students prepare and succeed in their final exams"
+				},
+				{
+					"para": "Substitute taught various topics such as database normalization, ERD creation, CRUD, CSS grid, HTML, JavaScript"
+				}
+			]
+		}
+	],
+	"personal": [
+		{
+			"name": "Missionary in Argentina",
+			"time": "Oct. 2018 - April 2020",
+			"description": [
+				{
+					"para": "Learned Spanish (Fluent). Had interactions with people through teaching and service"
+				},
+				{
+					"para": "Discovered how to love the people, work hard, and live within a tight budget"
+				},
+				{
+					"para": "Ascertained how to work with different personalities"
+				}
+			]
+		},
+		{
+			"name": "Eagle Scout",
+			"time": "Nov - Dec 2015",
+			"description": [
+				{
+					"para":"Planned, raised funds, and assembled emergency backpacks for Sexton Mtn. Elementary School" 
+				},
+				{
+					"para":"This involved raising over $1,000 and coordinating twenty volunteers"
+				},
+				{
+					"para":"Total contributed hours: 145"
+				}
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "Holes Are Bad",
+			"description": "Collaborated with a team as configuration manager and acting team lead using C# to create a fully functional game that has a title and an end screen"
+		},
+		{
+			"name": "Head Counter App",
+			"description": "Created a mobile app to keep track of the number of students in the classes I TA for."
+		}
+	],
+	"honor": [
+		{
+			"name": "Eagle Scout",
+			"time": "Jan. 19, 2017"
+		}
+	]
+}

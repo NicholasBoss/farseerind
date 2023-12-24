@@ -1,0 +1,97 @@
+{
+    "projects": [
+        {
+            "name": "Holes Are Bad",
+            "description": "The goal of the game is to collect a certain number of collectables while avoiding holes, enemies, and other dangerous objects.",
+            "link": "holesarebad.html",
+            "githubLink": "https://github.com/NicholasBoss/Holes-Are-Bad",
+            "projectImage": "images/holesarebad.jpg",
+            "fullDescription": [
+                {
+                    "para": "We wanted to create a game that would challenge the way a player thinks. For instance, in our game, if the player runs over spikes, they will gain more lives. Whereas in most games, spikes would damage the player. However, we didn't want to make things too simple by merely flipping all \"bad\" things to be good and all \"good\" things to be bad. Some things still behave how the player would expect. Our enemies are still bad, like they are in any other game. By not doing a straight good to bad and bad to good flip, we force the player to think and experiment with new concepts."
+                },
+                {
+                    "para": "The goal of the game is to collect a certain number of collectables while avoiding holes, enemies, and other dangerous objects. There are platforms the player will move around on to progress through the game. However, despite looking exactly the same, not all platforms are solid and the player will fall through them. The map segments for level 1 have different \"weights\" for how frequently they will be generated. As such, every instance of a level will be relatively unique to keep it more interesting." 
+                },
+                {
+                    "para": "When starting this project, most of our team was not familiar with C#. We all had a lot to learn before we could even get started. As we learned more C#, the progress rate of our project increased. Due to our slower start, we opted to prioritize functionality over organization with our code. Currently, we still have some organization, but we would like to make it simpler and split some of the larger files into many smaller files."
+                },
+                {
+                    "para": "However, thanks to this approach, we were able to accomplish all of our initial requirements except for graphic animations. For the sake of completing other requirements, we pushed off animations. We created all our graphics from scratch except for the background. Drawing multiple frames to make animations possible is time consuming. We merely ran out of time to finish and implement animations, though, we intend to continue working and implement animations in the future. As we worked on the project, we kept a list of additional ideas that we wanted to include. Even though we ended up not adding animations, we were able to implement slightly more than 2/3 of our additional ideas."
+                }
+            ]   
+        },
+        {
+            "name": "Head Counter App",
+            "description": "This app is to help attendance takers anywhere. This app allows you to click a button and it will decrease the amount of students absent and increase the amount of students that are present. It also allows you to reset each individual class attendance.",
+            "link": "headcounter.html",
+            "githubLink": "https://github.com/NicholasBoss/counter",
+            "projectImage": "images/headcounter.jpg",
+            "fullDescription":[
+                {
+                    "para": "This app is to help attendance takers anywhere. This app allows you to click a button and it will decrease the amount of students absent and increse the amount of students that are present. "
+                },
+                {
+                    "para": "Current version: 2.0"
+                }
+            ]
+        },
+        {
+            "name":"MySQL Database Program",
+            "description": "I have written software that connects to either a sqlite database or to Workbench, a tool that connects to a MySQL server. This program allows the user to add data into the database and then they can see the changes they have made.",
+            "link": "mysql.html",
+            "githubLink": "https://github.com/NicholasBoss/SQLdatabase",
+            "projectImage": "images/mysql.jpg",
+            "fullDescription": [
+                {
+                    "para": "By undertaking the challenge of learning how to connect python to a sql database, I hope to gain more understanding of how SQL language works behind the scenes of a GUI editor for the SQL language such as Workbench."
+                },
+                {
+                    "para": "I have written software that connects to either a sqlite database or to Workbench, a tool that connects to a MySQL server. This program allows the user to add data into the database and then they can see the changes they have made."
+                },
+                {
+                    "para": "I decided to write this program to help students learning about databases see what possibilities there are when it comes to creating a database; they can create one using a tool like Workbench or just by using python and the sqlite3 software. I also made this program to help me further understand how a database is created."
+                }
+            ]
+        },
+        {
+            "name": "The Three Pendants",
+            "description": "In this game, you will gather three pendants to unlock the chest. Use WASD keys to move.",
+            "link": "threependants.html",
+            "githubLink": "https://github.com/NicholasBoss/TheThreePendants",
+            "projectImage": "images/threependants.jpg",
+            "fullDescription" : [
+                {
+                    "para": "In this game you will gather three pendants to unlock the chest using the WASD keys to move."
+                }
+            ]
+        },
+        {
+            "name": "Batter",
+            "description": "This game is a recreation of a batter game where you try to clear all the blocks using the ball and moving the paddle at the bottom of the screen.",
+            "link": "batter.html",
+            "githubLink": "https://github.com/NicholasBoss/Batter",
+            "projectImage": "images/batter.jpg",
+            "fullDescription": [
+                {
+                    "para": "This game is a recreation of a batter game where you try to clear all the blocks using the ball and moving the paddle at the bottom of the screen."
+                }
+            ]
+        },
+        {
+            "name": "MDFire Database",
+            "description": "This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment.",
+            "link": "mdfire.html",
+            "githubLink": "#",
+            "fullDescription": [
+                {
+                    "para": "This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment."
+                },
+                {
+                    "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
+                }
+            ]
+        }
+
+    ]
+}

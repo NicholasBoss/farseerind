@@ -1,0 +1,48 @@
+{
+    "calendly" : [
+        {
+        "winter": "https://calendly.com/d/4yv-pq4-7y9",
+        "spring": "https://calendly.com/d/4zy-rbv-m3t",
+        "fall":   "https://calendly.com/d/3kv-n7v-vb2",
+        "out":    "https://calendly.com/d/42k-nqx-6bj"
+        }
+    ],
+    "classes" : [
+        {
+            "name" : "CIT 111",
+            "section": "3",
+            "time": "MWF 9:00AM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "CIT 111",
+            "section": "1",
+            "time": "MWF 11:30AM",
+            "teacher": "Brother Robertson"
+        },
+        {
+            "name" : "CIT 111",
+            "section": "2",
+            "time": "MWF 12:45PM",
+            "teacher": "Brother Clark"
+        },
+        {
+            "name" : "CIT 111",
+            "section": "5",
+            "time": "MWF 2:00PM",
+            "teacher": "Brother Clark"
+        },
+        {
+            "name" : "CIT 111",
+            "section": "4",
+            "time": "TR 8:00AM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "WDD 130",
+            "section": "1",
+            "time": "MW 10:15AM",
+            "teacher": "Brother Christensen"
+        }
+    ]
+}

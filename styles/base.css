@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap");
+:root {
+    /* Main Colors */
+	--primary-color: #87f1ff;
+	--secondary-color: #d5a021;
+	--accent1-color: #841d8c;
+	--accent2-color: beige;
+	--accent3-color: black;
+    --border-color: #d5a021;
+    --ham-color: #d5a021;
+    
+	/* Fonts */
+	--heading-font: "Dancing Script", sans-serif;
+	--paragraph-font: "EB Garamond", Helvetica, sans-serif;
+    
+	/* Navigation */
+	--nav-link-color: var(--accent3-color);
+	--nav-background-color: var(--secondary-color);
+	--nav-hover-link-color: var(--accent1-color);
+	--nav-hover-background-color: var(--primary-color);
+    --footer-link-color: #f1f1f1;
+}
+
+/* GENERAL CSS */
+body {
+	margin: 0 auto;
+	font-family: var(--paragraph-font);
+    color: var(--accent3-color);
+	max-width: 900px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+	color: var(--accent3-color);
+}
+
+header {
+    border-bottom: 1px solid var(--accent3-color);
+	background-color: var(--secondary-color);
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-items: center;
+	padding: 0.5rem;
+}
+
+.logo {
+	max-width: 100%;
+}
+
+nav {
+	background-color: var(--nav-background-color);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.navigation li a:hover,
+.navigation li button:hover,
+#active:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+#active {
+	color: black;
+	background-color: var(--primary-color);
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 3px 7px 6px;
+	background-color: var(--ham-color);
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--secondary-color);
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+    color: var(--accent3-color);
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+}
+.navigation li:nth-child(3) {
+	padding: 1rem;
+	padding-right: 0;
+	padding-left: 0;
+}
+.navigation li:nth-child(3) a{
+	display: inline;
+	padding-right: .5rem;
+}
+
+.navigation li:nth-child(3) img {
+	background-color: inherit;
+}
+
+.navigation li:nth-child(3):hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li:first-of-type {
+	margin-top: 90px;
+}
+.open li {
+	display: block;
+	width: 100%;
+    grid-row: 1/3;
+}
+.open li a {
+	display: block;
+    grid-row: 1/3;
+}
+
+
+/* DROPDOWN MENU */
+/* Dropdown Button */
+.dropbtn {
+	background-color: var(--ham-color);
+	border: 2px solid var(--accent3-color);
+	padding: 0 .5em;
+	border: none;
+	cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--nav-background-color);
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	max-width: 50%;
+  }
+
+
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px 8px;
+	text-decoration: none;
+	display: block;
+	
+  }
+  
+  /* Change color of dropdown links on hover */
+#dropdown a:hover {
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+	font-weight: 700;
+}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+	display:block;
+}
+
+.dropdown-content p {
+	font-size: .8em;
+}
+
+.social a {
+	text-decoration: none;
+}
+
+
+
+/* HOME PAGE */
+
+/* Login Form provided by W3Schools */
+#login-form {
+	max-width: 100%;
+}
+
+/* Bordered form */
+form {
+	border: 3px solid var(--border-color);
+  }
+  
+  input[type=text], input[type=password] {
+	width: 80%;
+	padding: 12px 20px;
+	margin: 0 auto;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  /* Set a style for form buttons */
+  .login button, .formbtn {
+	background-color: var(--primary-color);
+	color: var(--accent3-color);
+	padding: 1rem;
+	margin: 8px 0;
+	cursor: pointer;
+  }
+
+  .login button {
+	background-color: var(--ham-color);
+	border: none;
+	margin: 0;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: var(--accent1-color);
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+	width: 40%;
+	border-radius: 50%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+	padding: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	.cancelbtn {
+	  width: 100%;
+	}
+  }
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: var(--nav-background-color);
+	margin: 5px auto; /* 15% from the top and centered */
+	border: 1px solid var(--border-color);
+	width: 80%; /* Could be more or less, depending on screen size */
+  }
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)}
+	to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+	from {transform: scale(0)}
+	to {transform: scale(1)}
+  }
+
+.profilepic {
+	max-width: 100%;
+}
+
+.home-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+}
+
+.home-card h2,
+.home-card h3 {
+	background-color: var(--primary-color);
+	margin: 0;
+}
+
+.prof-para ul {
+	list-style: none;
+	padding: 0;
+	/* text-align: left; */
+}
+
+.para a {
+	text-decoration: none;
+	background-color: var(--nav-background-color);
+	color: var(--accent3-color);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.para a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+.data, .code {
+	width: 50%;
+	margin-top: 5%;
+}
+
+footer {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--accent3-color);
+}
+
+.social .icon {
+	width: 25%;
+	/* background-color: var(--primary-color); */
+	/* border-radius: 50%; */
+	
+}
+
+.social a:nth-child(2) {
+	padding: 0 7%;
+}
+
+/* RESUME PAGE */
+
+#resume-main {
+	max-width: 900px;
+	margin: 0 auto;
+	border: 2px solid black;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#resume-main h1, #resume-main h2, #resume-main h3 {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+#resume-main div p{
+	padding: 1rem;
+}
+
+.professional p:nth-child(3) {
+	padding: 1rem;
+}
+
+.download {
+	margin-bottom: 15%;
+}
+
+.download a {
+	color: var(--accent3-color);
+	background-color: var(--nav-background-color);
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 1rem;
+	margin-top: 2%;
+}
+
+.download a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+/* PROJECTS PAGE*/
+
+.project-card {
+	border: 4px solid var(--border-color);
+	border-radius: 1%;
+	margin-bottom: 2%;
+	display: grid;
+	grid-template-rows: 40px 1fr 1fr;
+}
+.project-card h4 {
+	background-color: var(--primary-color);
+	margin: 0;
+	font-size: 1.2em;
+}
+.project-card p {
+	padding: 2%;
+}
+.project-card a {
+	color: var(--nav-link-color);
+	background-color: var(--nav-background-color);
+	text-decoration: none;
+	border: 5px;
+	max-width: 50%;
+	padding: 1rem;
+	margin: 0 auto;
+	justify-self: center;
+	align-self: center;
+	margin-bottom: 2%;
+}
+
+.project-card a:hover{
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+/* TA PAGE */
+
+#ta-main {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.ta-calendly {
+	margin-top: 10px;
+    width: 100%;
+}
+
+.widget {
+	margin: 10px auto;
+	width: 90%;
+    height: 500px;
+}
+
+.ta-help {
+	margin-top: 0%;
+    width: 90%;
+}
+
+/* INDIVIDUAL PROJECT PAGES */
+
+.project-card img {
+	max-width: 100%;
+}
+
+/* CONCEPT WORKSHOP PAGES */
+
+.accordion {
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+    padding: 1rem;
+    width: 90%;
+    border: none;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+.panel {
+    margin: 0 auto;
+    background-color: var(--footer-link-color);
+    max-height: 0;
+    overflow: hidden;
+    width: 90%;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel a {
+    text-decoration: none;
+    /* color: gold; */
+}
+
+.panel a:hover {
+    color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+
+.accordion::after {
+    content: '\002B';
+    color: var(--accent3-color);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active::after {
+    content: "\2212";
+}

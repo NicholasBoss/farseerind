@@ -1,0 +1,221 @@
+@media screen and (min-width: 900px) {
+    body {
+        max-width: 100%;
+    }
+    #menu{
+        display: none;
+    }
+
+    nav{
+        grid-column: 3;
+    }
+
+    .navigation {
+        display: flex;
+		flex-direction: row;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+    .navigation li:nth-child(3) {
+        padding: 0;
+        display: inline-flex;
+    }
+    .navigation li:nth-child(3) a{
+        display: block;
+        padding: 1rem;
+    }
+
+    .navigation li:nth-child(3):hover {
+        color: var(--nav-hover-link-color);
+        background-color: var(--nav-hover-background-color);
+        font-weight: 700;
+    }
+
+    .open li:first-of-type {
+        margin-top: 0px;
+    }
+
+    #dropdown {
+        margin-top: 50px;
+      }
+
+    .dropbtn {
+        margin-left: 0;
+        padding: 5px;
+        /* margin-top: 10px; */
+    }
+
+    .logo {
+        max-width: 350px;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    input {
+        display: block;
+    }
+
+    input[type=text], input[type=password] {
+        width: 50%;
+        display: block;
+    }
+
+    /* HOME */
+    
+    .home-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 80%;
+        margin: 2% auto;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .home-card .prof-para {
+        grid-column: 2/4;
+    }
+
+    .para {
+        justify-self: center;
+        align-self: center;
+    }
+
+    .data, .code {
+        justify-self: center;
+        align-self: center;
+        margin: 10% 0;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social .icon {
+        width: 10%;
+    }
+
+    /* RESUME */
+    #resume-main {
+        max-width: 100%;
+        border-bottom: none;
+    }
+
+    .res-contact .grid,
+    .res-dss .grid,
+    .res-skills .grid,
+    .res-prof-exp .grid,
+    .res-pers-exp .grid,
+    .res-projects .grid,
+    .res-honor-award .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
+
+    .res-education .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .res-education .grid .gpa {
+        grid-column: 1/2;
+    }
+    .res-education .grid .expected {
+        grid-column: 4/5;
+    }
+
+    .download {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2%;
+    }
+
+    .download a {
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* PROJECTS */
+
+    .project-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 5px;
+        margin: 2%;
+    }
+
+    /* TA */
+
+    #ta-main {
+        max-width: 100%;
+    }
+
+    .ta {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        margin: 2%;
+    }
+    .ta .grid {
+        display: grid;
+        grid-template-rows: 160px 1fr;
+    }
+
+    .ta-calendly {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .widget {
+        width: 100%;
+        height: 620px;
+    }
+
+    .ta-classes {
+        margin: 0 auto;
+        justify-self: center;
+        /* align-self: center; */
+    }
+
+    .ta-help {
+        width: 100%;
+    }
+
+    .ta-help ul {
+        margin: 0 auto;
+    }
+
+    .ta-card {
+        border: 4px solid var(--border-color);
+        border-radius: 1%;
+        margin-bottom: 2%;
+    }
+
+    .ta-card h2 {
+        align-self: center;
+    }
+
+    .ta-class {
+        padding: 5%;
+    }
+
+    /* INDIVIDUAL PROJECT PAGES */
+
+    .project-card img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /* CONCEPT WORKSHOP */
+
+    .accordion, .panel {
+        width: 30%;
+    }
+}
