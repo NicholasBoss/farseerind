@@ -331,6 +331,10 @@ form {
 	margin: 0;
 }
 
+.home-card .para {
+	padding: 2%;
+}
+
 .prof-para ul {
 	list-style: none;
 	padding: 0;
@@ -459,6 +463,10 @@ footer {
 .ta-calendly {
 	margin-top: 10px;
     width: 100%;
+}
+
+.ta-calendly h2 {
+	padding: 2%;
 }
 
 .widget {
