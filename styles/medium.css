@@ -132,14 +132,16 @@
         grid-column: 4/5;
     }
 
-    .download {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-bottom: 2%;
-    }
+    
 
+    .download {
+        display: inline-flex;
+        justify-content: space-around;
+        gap: 15px;
+    }
     .download a {
-        justify-self: center;
+        display: block;
+        padding: 1rem;
         align-self: center;
     }
 

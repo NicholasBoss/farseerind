@@ -10,8 +10,10 @@
     --ham-color: #d5a021;
     
 	/* Fonts */
-	--heading-font: "Dancing Script", sans-serif;
-	--paragraph-font: "EB Garamond", Helvetica, sans-serif;
+	/* --heading-font: "Dancing Script", sans-serif; */
+	/* --paragraph-font: "EB Garamond", Helvetica, sans-serif; */
+	--heading-font: "Times New Roman", serif;
+	--paragraph-font: "Arial", sans-serif;
     
 	/* Navigation */
 	--nav-link-color: var(--accent3-color);
@@ -261,7 +263,6 @@ form {
   /* Avatar image */
   img.avatar {
 	width: 40%;
-	border-radius: 50%;
   }
   
   /* Add padding to containers */
@@ -361,7 +362,7 @@ footer {
 }
 
 .social .icon {
-	width: 25%;
+	width: 15%;
 	/* background-color: var(--primary-color); */
 	/* border-radius: 50%; */
 	
@@ -388,12 +389,9 @@ footer {
 	padding: 1rem;
 }
 
-.professional p:nth-child(3) {
-	padding: 1rem;
-}
-
 .download {
-	margin-bottom: 15%;
+	display: flex;
+	justify-content: space-around;
 }
 
 .download a {
@@ -402,13 +400,17 @@ footer {
 	border-radius: 5px;
 	text-decoration: none;
 	padding: 1rem;
-	margin-top: 2%;
+	margin: 7% 0;
 }
 
 .download a:hover {
 	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	font-weight: 700;
+}
+
+.res-skills .grid {
+	text-align: left;
 }
 
 /* PROJECTS PAGE*/

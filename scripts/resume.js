@@ -16,8 +16,8 @@ function displayResume(data) {
     let dssData = data.dss;
     // console.log(dssData);
     // Create an element to display each part of the resume
-    const contactElement = document.createElement('div');
-    contactElement.classList.add('grid');
+    // const contactElement = document.createElement('div');
+    // contactElement.classList.add('grid');
     const educationElement = document.createElement('div');
     educationElement.classList.add('grid');
     const dssElement = document.createElement('div');
@@ -38,11 +38,11 @@ function displayResume(data) {
     // Use the data object to access the appropriate property
 
     // Contact
-    contactElement.innerHTML = `
-        <p>${contactData[0].phone}</p>
-        <p>${contactData[0].email}</p>
-        <p>${contactData[0].location}</p>
-    `;
+    // contactElement.innerHTML = `
+    //     <p>${contactData[0].phone}</p>
+    //     <p>${contactData[0].email}</p>
+    //     <p>${contactData[0].location}</p>
+    // `;
     // Education
     educationElement.innerHTML = `
         <p>${educationData[0].degree}</p>
@@ -78,9 +78,9 @@ function displayResume(data) {
     // Use a foreach loop to get each skill
     let skillsData = data.skills;
     skillsData.forEach(skill => {
-        const skillItem = document.createElement('div');
+        const skillItem = document.createElement('ul');
         skillItem.innerHTML = `
-            <p>${skill.skill}</p>
+            <li>${skill.skill}</li>
         `;
         skillsElement.appendChild(skillItem);
     });
@@ -194,7 +194,7 @@ function displayResume(data) {
 
     // Append each element to the appropriate section
     
-    contact.appendChild(contactElement);
+    // contact.appendChild(contactElement);
     education.appendChild(educationElement);
     dss.appendChild(dssElement);
     skills.appendChild(skillsElement);

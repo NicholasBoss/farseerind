@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Farseer Industries - Resume Page">
+    <meta name="description" content="Nicholas Boss - Resume Page">
     <meta name="author" content="Nicholas Boss">
     <meta property="og:title" content="Resume">
-    <meta property="og:description" content="Farseer Industries - Resume Page">
+    <meta property="og:description" content="Nicholas Boss - Resume Page">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/farseerindustrieslogo.png">
+    <meta property="og:image" content="./images/nicholas-boss-logo.png">
     <meta property="og:url" content="https://nicholasboss.github.io/farseerind/resume.html">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
@@ -25,7 +25,7 @@
 <body>
     <header>
         <a id="logo_link" href="index.html">
-            <img class="logo" src="./images/farseerindustrieslogo.png" alt="Farseer Industries Logo">
+            <img class="logo" src="./images/nicholas-boss-logo.png" alt="Nicholas Boss Logo">
         </a>
         <button id="menu" aria-label="hamburger-menu"></button>
         <nav>
@@ -55,7 +55,7 @@
                 <!-- Modal Content -->
                 <form class="modal-content animate" action="redirect.html" method="get">
                   <div class="imgcontainer">
-                    <img src="./images/farseerindustrieslogo.png" alt="Avatar" class="avatar">
+                    <img src="./images/nicholas-boss-logo.png" alt="Avatar" class="avatar">
                   </div>
               
                   <div class="container">
@@ -77,17 +77,20 @@
         </div>
     </header>
     <main id="resume-main">
-        <h1>My Resume</h1>
+        <div class="download">
+            <h1>My Resume</h1>
+            <a href="./data/resume.pdf" download="resume.pdf">
+                <img src="./images/download-solid.svg" alt="Download Image">
+            </a>
+        </div>
         <hr>
         <h2>Nicholas Boss</h2>
         <hr>
-        <div class="res-contact"><h3>Contact</h3></div>
+        <div class="res-skills"><h3>Skills</h3></div>
         <hr>
         <div class="res-education"><h3>Education</h3></div>
         <hr>
         <div class="res-dss"><h3>Data Science Society (DSS)</h3></div>
-        <hr>
-        <div class="res-skills"><h3>Skills</h3></div>
         <hr>
         <div class="res-prof-exp"><h3>Professional Experience</h3></div>
         <hr>
@@ -97,17 +100,13 @@
         <hr>
         <div class="res-honor-award"><h3>Honors/Awards</h3></div>
         <hr>
-        <div class="download">
-            <h3>Download my Resume Here!</h3>
-            <a href="./data/resume.pdf" download="resume.pdf">Download Resume</a>
-        </div>
+        
     </main>
     <footer>
         <div class="info">
-            <p>Farseer Industries - &copy; <span id="currentyear"></span></p>
+            <p>Nicholas Boss - &copy; <span id="currentyear"></span></p>
         </div>
         <div class="modified">
-            <p>Nicholas Boss</p>
             <p>Last Modified: <span id="lastmodified"></span></p>
         </div>
         <div class="contact">
