@@ -414,6 +414,9 @@ footer {
 #resume-main .res-pers-exp {
 	padding: 1rem;
 }
+#resume-main .res-projects {
+	padding: 1rem;
+}
 
 .download {
 	display: flex;
