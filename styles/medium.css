@@ -20,6 +20,11 @@
 		flex: 1 1 100%;
 	}
 
+    .navigation li button {
+        margin-top: 0;
+        margin-left: 15px;
+    }
+
     .navigation li:nth-child(3) {
         padding: 0;
         display: inline-flex;
