@@ -16,7 +16,7 @@ function displayResume(data) {
     // Create an element to display each part of the resume
     // const contactElement = document.createElement('div');
     // contactElement.classList.add('grid');
-    const educationElement = document.createElement('ul');
+    const educationElement = document.createElement('div');
     educationElement.classList.add('grid');
     const dssElement = document.createElement('div');
     dssElement.classList.add('grid');
@@ -43,7 +43,8 @@ function displayResume(data) {
     // `;
     // Education
     let educationData = data.education;
-    educationElement.innerHTML = `
+    let educationItem = document.createElement('ul');
+    educationItem.innerHTML = `
         <li>${educationData[0].degree}</li>
         <li>${educationData[0].school}</li>
         <li>${educationData[0].location}</li>
@@ -51,6 +52,7 @@ function displayResume(data) {
         <li class="gpa">GPA: ${educationData[0].gpa}</li>
         <li class="expected">Expected Graduation: ${educationData[0].expected}</li>
     `;
+    educationElement.appendChild(educationItem);
     // DSS
     // For each dss
     // Use the data object to access the appropriate property
