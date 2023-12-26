@@ -1,13 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap");
 :root {
     /* Main Colors */
-	--primary-color: #87f1ff;
-	--secondary-color: #d5a021;
-	--accent1-color: #510057;
-	--accent2-color: beige;
+	--primary-color: #058CA6;
+	--secondary-color: #f07142;
+	--accent1-color: #688D1A;
+	--accent2-color: #f98a62;
 	--accent3-color: black;
-    --border-color: #d5a021;
-    --ham-color: #d5a021;
+	--accent4-color: white;
+    --border-color: #f07142;
+    --ham-color: #f07142;
     
 	/* Fonts */
 	/* --heading-font: "Dancing Script", sans-serif; */
@@ -18,8 +19,8 @@
 	/* Navigation */
 	--nav-link-color: var(--accent3-color);
 	--nav-background-color: var(--secondary-color);
-	--nav-hover-link-color: var(--accent1-color);
-	--nav-hover-background-color: var(--primary-color);
+	--nav-hover-link-color: var(--accent3-color);
+	--nav-hover-background-color: var(--accent2-color);
     --footer-link-color: #f1f1f1;
 }
 
@@ -68,16 +69,16 @@ nav {
 .navigation li button:hover,
 #active:hover {
 	color: var(--nav-hover-link-color);
-	/* background-color: var(--nav-hover-background-color); */
-	font-weight: 800;
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+	border-radius: 5px;
 }
 
 #active {
 	color: black;
-	font-weight: bold;
 	box-shadow: 5px 5px 10px black;
 	border-radius: 5px;
-	/* background-color: var(--primary-color); */
+	background-color: var(--accent2-color);
 }
 
 #menu {
@@ -133,11 +134,13 @@ nav {
 
 .navigation li:nth-child(3) img {
 	background-color: inherit;
+	border-radius: 5px;
 }
 
 .navigation li:nth-child(3):hover {
 	color: var(--nav-hover-link-color);
-	/* background-color: var(--nav-hover-background-color); */
+	background-color: var(--nav-hover-background-color);
+	border-radius: 5px;
 	/* font-weight: 700; */
 }
 
@@ -188,21 +191,13 @@ nav {
 	max-width: 50%;
 }
 
-
-
 /* Links inside the dropdown */
 .dropdown-content a {
 	color: black;
 	padding: 12px 8px;
 	text-decoration: none;
 	display: block;
-}
-  
-  /* Change color of dropdown links on hover */
-#dropdown a:hover {
-	/* background-color: var(--nav-hover-background-color); */
-	color: var(--nav-hover-link-color);
-	/* font-weight: 800; */
+	font-size: 1.2em;
 }
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
@@ -243,7 +238,7 @@ form {
   
   /* Set a style for form buttons */
   .login button, .formbtn {
-	background-color: var(--primary-color);
+	background-color: var(--accent2-color);
 	color: var(--accent3-color);
 	padding: 1rem;
 	margin: 8px 0;
@@ -260,7 +255,7 @@ form {
   .cancelbtn {
 	width: auto;
 	padding: 10px 18px;
-	background-color: var(--accent1-color);
+	background-color: var(--accent2-color);
   }
   
   /* Center the avatar image inside this container */
@@ -491,7 +486,6 @@ footer {
 }
 
 .ta-calendly {
-	margin-top: 10px;
     width: 100%;
 }
 

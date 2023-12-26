@@ -176,13 +176,16 @@
     }
 
     .ta-calendly {
-        margin-top: 10px;
         width: 100%;
     }
 
     .widget {
         width: 100%;
         height: 95%;
+    }
+
+    .calendly-inline-widget {
+        overflow-y: 0;
     }
 
     .ta-classes {
