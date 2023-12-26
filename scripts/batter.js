@@ -7,7 +7,7 @@ function displayCard (data) {
     let descriptions = batterData.fullDescription;
 
     descriptions.forEach(description => {
-        fullDescriptionList.push(`<p>${description.para}</p>`);
+        fullDescriptionList.push(`<p class="full-description">${description.para}</p>`);
     });
 
     fullDescriptionList = fullDescriptionList.join('');

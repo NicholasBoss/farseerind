@@ -1,4 +1,4 @@
-const contact = document.querySelector('.res-contact');
+// const contact = document.querySelector('.res-contact');
 const education = document.querySelector('.res-education');
 const dss = document.querySelector('.res-dss');
 const skills = document.querySelector('.res-skills');
@@ -11,14 +11,12 @@ function displayResume(data) {
     // Use the data object to create the resume
     // console.log(data);
 
-    let contactData = data.contact;
-    let educationData = data.education;
-    let dssData = data.dss;
+    // let contactData = data.contact;
     // console.log(dssData);
     // Create an element to display each part of the resume
     // const contactElement = document.createElement('div');
     // contactElement.classList.add('grid');
-    const educationElement = document.createElement('div');
+    const educationElement = document.createElement('ul');
     educationElement.classList.add('grid');
     const dssElement = document.createElement('div');
     dssElement.classList.add('grid');
@@ -44,13 +42,14 @@ function displayResume(data) {
     //     <p>${contactData[0].location}</p>
     // `;
     // Education
+    let educationData = data.education;
     educationElement.innerHTML = `
-        <p>${educationData[0].degree}</p>
-        <p>${educationData[0].school}</p>
-        <p>${educationData[0].location}</p>
-        <p>${educationData[0].time}</p>
-        <p class="gpa">GPA: ${educationData[0].gpa}</p>
-        <p class="expected">Expected ${educationData[0].expected}</p>
+        <li>${educationData[0].degree}</li>
+        <li>${educationData[0].school}</li>
+        <li>${educationData[0].location}</li>
+        <li>${educationData[0].time}</li>
+        <li class="gpa">GPA: ${educationData[0].gpa}</li>
+        <li class="expected">Expected Graduation: ${educationData[0].expected}</li>
     `;
     // DSS
     // For each dss
@@ -59,12 +58,13 @@ function displayResume(data) {
     // Use the createElement() method to create an element to display each dss
     // Append each dss element to the dss section
     // Use a foreach loop to get each dss
+    let dssData = data.dss;
     dssData.forEach(dss => {
-        const dssItem = document.createElement('div');
+        const dssItem = document.createElement('ul');
         dssItem.innerHTML = `
-            <p>Company: ${dss.project}</p>
-            <p>Position: ${dss.position}</p>
-            <p>${dss.description}</p>
+            <li>Company: ${dss.project}</li>
+            <li>Position: ${dss.position}</li>
+            <li>${dss.description}</li>
         `;
         dssElement.appendChild(dssItem);
     });
@@ -97,13 +97,13 @@ function displayResume(data) {
     // console.log(descriptions);
     let fullDescription = [];
     professionalData.forEach(professional => {
-        const professionalItem = document.createElement('div');
+        const professionalItem = document.createElement('ul');
         professionalItem.classList.add('professional');
         let descriptions = professional.description;
         
         // Use a foreach loop to get each description
         descriptions.forEach(description => {
-            fullDescription.push(`<p>${description.para}</p>`);
+            fullDescription.push(`<li>${description.para}</li>`);
         });
 
         // console.log(fullDescription);
@@ -117,7 +117,7 @@ function displayResume(data) {
         // console.log(descriptionElement);
         professionalItem.innerHTML = `
             <h4>${professional.name}</h4>
-            <p>${professional.time}</p>
+            <li>${professional.time}</li>
             ${fullDescription}
         `;
 
@@ -135,14 +135,14 @@ function displayResume(data) {
     // console.log(`PersonalData: ${personalData}`);
 
     personalData.forEach(personal => {
-        const personalItem = document.createElement('div');
+        const personalItem = document.createElement('ul');
 
         personalItem.innerHTML = `
             <h4>${personal.name}</h4>
-            <p>${personal.time}</p>
-            <p>${personal.description[0].para}</p>
-            <p>${personal.description[1].para}</p>
-            <p>${personal.description[2].para}</p>
+            <li>${personal.time}</li>
+            <li>${personal.description[0].para}</li>
+            <li>${personal.description[1].para}</li>
+            <li>${personal.description[2].para}</li>
         `;
         // console.log(`Personal: ${personal.name}, ${personal.time}, ${personal.description}`);
         personalElement.appendChild(personalItem);
@@ -161,11 +161,11 @@ function displayResume(data) {
     // console.log(`ProjectsData: ${projectsData}`);
 
     projectsData.forEach(project => {
-        const projectItem = document.createElement('div');
+        const projectItem = document.createElement('ul');
 
         projectItem.innerHTML = `
             <h4>${project.name}</h4>
-            <p>${project.description}</p>
+            <li>${project.description}</li>
         `;
         // console.log(`Project: ${project.name}, ${project.description}`);
         projectsElement.appendChild(projectItem);

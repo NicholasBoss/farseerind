@@ -7,14 +7,14 @@ function displayCard (data) {
     let descriptions = counterData.fullDescription;
 
     descriptions.forEach(description => {
-        fullDescriptionList.push(`<p>${description.para}</p>`);
+        fullDescriptionList.push(`<p class="full-description">${description.para}</p>`);
     });
 
     fullDescriptionList = fullDescriptionList.join('');
 
     counter.innerHTML = `
         <h4>${counterData.name}</h4>
-        <img src="${counterData.projectImage}" alt="${counterData.name}">
+        <img id="count-img" src="${counterData.projectImage}" alt="${counterData.name}">
         ${fullDescriptionList}
         <a href="${counterData.githubLink}" target="_blank">View Project</a>
     `;
