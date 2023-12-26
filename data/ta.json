@@ -9,37 +9,43 @@
     ],
     "classes" : [
         {
-            "name" : "CIT 111",
+            "name" : "Intro to Databases",
+            "code": "CIT 111",
             "section": "3",
             "time": "MWF 9:00AM",
             "teacher": "Brother Christensen"
         },
         {
-            "name" : "CIT 111",
+            "name" : "Intro to Databases",
+            "code": "CIT 111",
             "section": "1",
             "time": "MWF 11:30AM",
             "teacher": "Brother Robertson"
         },
         {
-            "name" : "CIT 111",
+            "name" : "Intro to Databases",
+            "code": "CIT 111",
             "section": "2",
             "time": "MWF 12:45PM",
             "teacher": "Brother Clark"
         },
         {
-            "name" : "CIT 111",
+            "name" : "Intro to Databases",
+            "code": "CIT 111",
             "section": "5",
             "time": "MWF 2:00PM",
             "teacher": "Brother Clark"
         },
         {
-            "name" : "CIT 111",
+            "name" : "Intro to Databases",
+            "code": "CIT 111",
             "section": "4",
             "time": "TR 8:00AM",
             "teacher": "Brother Christensen"
         },
         {
-            "name" : "WDD 130",
+            "name" : "Web Fundamentals",
+            "code": "WDD 130",
             "section": "1",
             "time": "MW 10:15AM",
             "teacher": "Brother Christensen"
