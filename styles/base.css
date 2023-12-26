@@ -65,7 +65,8 @@ nav {
 }
 
 .navigation li a:hover,
-.navigation li button:hover {
+.navigation li button:hover,
+#active:hover {
 	color: var(--nav-hover-link-color);
 	/* background-color: var(--nav-hover-background-color); */
 	font-weight: 800;
@@ -114,6 +115,12 @@ nav {
 	padding: 1rem;
 	text-align: center;
 	text-decoration: none;
+}
+.navigation li button {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	margin-left: 15px;
 }
 .navigation li:nth-child(3) {
 	padding: 1rem;
