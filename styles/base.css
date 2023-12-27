@@ -515,8 +515,6 @@ footer {
 	padding: 1rem;
 }
 
-
-
 .ta-help {
 	margin-top: 0%;
     width: 90%;
@@ -524,6 +522,7 @@ footer {
 
 .ta-help ul {
 	text-align: left;
+	margin-left: 10%;
 }
 
 /* INDIVIDUAL PROJECT PAGES */
