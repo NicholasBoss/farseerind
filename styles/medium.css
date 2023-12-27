@@ -165,7 +165,11 @@
     }
 
     .ta-calendly {
-        width: 100%;
+        width: 100%;   
+    }
+
+    .ta-calendly h2 {
+        margin-top: 10%;
     }
 
     .widget {

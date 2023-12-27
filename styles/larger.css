@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     .ta .grid {
         display: grid;
         grid-template-rows: 160px 1fr;
