@@ -148,6 +148,7 @@
     .ta-help ul {
         margin: 0 auto;
         margin-bottom: 2%;
+        
     }
 
     .ta-card {
@@ -162,6 +163,10 @@
 
     .ta-class {
         padding: 0 3%;
+    }
+
+    .ta-class p{
+        text-align: left;
     }
 
     /* INDIVIDUAL PROJECT PAGES */

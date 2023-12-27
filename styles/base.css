@@ -511,9 +511,11 @@ footer {
     height: 500px;
 }
 
-.ta-class p{
-	text-align: left;
+.ta-class {
+	padding: 1rem;
 }
+
+
 
 .ta-help {
 	margin-top: 0%;
