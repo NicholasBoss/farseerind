@@ -78,14 +78,21 @@ function displayResume(data) {
     // Use the createElement() method to create an element to display each skill
     // Append each skill element to the skills section
     // Use a foreach loop to get each skill
+    let skillList = []
+    let skillItem = document.createElement('ul');
     let skillsData = data.skills;
     skillsData.forEach(skill => {
-        const skillItem = document.createElement('ul');
-        skillItem.innerHTML = `
-            <li>${skill.skill}</li>
-        `;
-        skillsElement.appendChild(skillItem);
+        console.log(skill.skill);
+        skillList.push(`<li>${skill.skill}</li>`);
     });
+    skillList = skillList.join('');
+    console.log(skillList);
+    skillItem.innerHTML = `
+        ${skillList}
+    `;
+    skillsElement.appendChild(skillItem);
+
+
 
     // Professional
     // For each professional

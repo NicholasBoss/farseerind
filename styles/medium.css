@@ -114,27 +114,15 @@
         border-bottom: none;
     }
 
-    .res-contact .grid,
+    .res-skills .grid ul,
+    .res-education .grid ul,
     .res-dss .grid,
-    .res-skills .grid,
     .res-prof-exp .grid,
     .res-pers-exp .grid,
     .res-projects .grid,
     .res-honor-award .grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    }
-
-    .res-education .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .res-education .grid .gpa {
-        grid-column: 1/2;
-    }
-    .res-education .grid .expected {
-        grid-column: 4/5;
     }
 
     
