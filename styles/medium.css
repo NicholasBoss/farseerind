@@ -89,6 +89,7 @@
     .para {
         justify-self: center;
         align-self: center;
+        margin-bottom: 2%;
     }
 
     .data, .code {
@@ -160,7 +161,7 @@
     }
     .ta .grid {
         display: grid;
-        grid-template-rows: 160px 1fr;
+        grid-template-rows: 100px 1fr;
     }
 
     .ta-calendly {
@@ -188,6 +189,7 @@
 
     .ta-help ul {
         margin: 0 auto;
+        margin-bottom: 2%;
     }
 
     .ta-card {
@@ -201,7 +203,7 @@
     }
 
     .ta-class {
-        padding: 5%;
+        padding: 0 3%;
     }
 
     /* INDIVIDUAL PROJECT PAGES */

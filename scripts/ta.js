@@ -31,7 +31,7 @@ function displayClasses(data) {
         const classItem = document.createElement('div');
         classItem.setAttribute('class', 'ta-class')
         classItem.innerHTML = `
-            <h4>${classObj.name} - ${classObj.code}-${classObj.section}</h4>
+            <h4>${classObj.code}-${classObj.section} - ${classObj.name}</h4>
             <p>${classObj.time} - ${classObj.teacher}</p>
         `;
         classes.appendChild(classItem);
