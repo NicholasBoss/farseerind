@@ -163,6 +163,10 @@
         display: grid;
         grid-template-rows: 100px 1fr;
     }
+    .ta .grid:nth-child(1) {
+        display: grid;
+        grid-template-rows: 160px 1fr;
+    }
 
     .ta-calendly {
         width: 100%;   
