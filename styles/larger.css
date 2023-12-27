@@ -3,4 +3,8 @@
         display: grid;
         grid-template-rows: 160px 1fr;
     }
+
+    .widget {
+        height: 95%;
+    }
 }
