@@ -110,6 +110,10 @@ p {
   color: var(--accent3-color);
 }
 
+p.normal, p.colored {
+  text-align: left;
+}
+
 p.colored {
   background-color: var(--accent1-color);
   color: var(--accent2-color);
