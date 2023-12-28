@@ -131,9 +131,9 @@
         height: 75%;
     }
 
-    .calendly-inline-widget {
-        overflow-y: 0;
-    }
+    /* .calendly-inline-widget {
+        overflow-y: clip;
+    } */
 
     .ta-classes {
         margin: 0 auto;
