@@ -56,6 +56,8 @@ hr {
 
 ul {
   text-align: left;
+  margin-left: 25%;
+  max-width: 50%;
 }
 header {
   padding: 1em;
