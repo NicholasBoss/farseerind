@@ -74,7 +74,7 @@ nav {
 }
 
 #active {
-	color: black;
+	color: var(--accent2-color);
 	box-shadow: 5px 5px 10px black;
 	border-radius: 5px;
 	background-color: var(--accent1-color);
@@ -562,7 +562,7 @@ footer {
 .accordion {
     margin: 0 auto;
     background-color: var(--secondary-color);
-    color: var(--primary-color);
+    color: var(--accent2-color);
     cursor: pointer;
     padding: 1rem;
     width: 90%;
@@ -589,7 +589,11 @@ footer {
 
 .panel a {
     text-decoration: none;
-    /* color: gold; */
+	padding: .2rem;
+    color: var(--accent2-color);
+	box-shadow: 5px 5px 10px black;
+	border-radius: 5px;
+	background-color: var(--accent1-color);
 }
 
 .panel a:hover {
