@@ -68,6 +68,9 @@ header {
 header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
+header nav a{
+  margin: 0 auto;
+}
 
 #code {
   width: 30%;
