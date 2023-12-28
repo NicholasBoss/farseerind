@@ -222,6 +222,19 @@ nav {
 	text-decoration: none;
 }
 
+.social a:nth-child(1) img:hover,
+.social a:nth-child(3) img:hover {
+	border-radius: 50%;
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
+.social a:nth-child(2) img:hover {
+	border-radius: 5px;
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+	font-weight: 700;
+}
 
 
 /* HOME PAGE */
