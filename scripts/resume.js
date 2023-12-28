@@ -82,11 +82,11 @@ function displayResume(data) {
     let skillItem = document.createElement('ul');
     let skillsData = data.skills;
     skillsData.forEach(skill => {
-        console.log(skill.skill);
+        // console.log(skill.skill);
         skillList.push(`<li>${skill.skill}</li>`);
     });
     skillList = skillList.join('');
-    console.log(skillList);
+    // console.log(skillList);
     skillItem.innerHTML = `
         ${skillList}
     `;
