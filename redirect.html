@@ -60,10 +60,10 @@
               
                   <div class="container">
                     <label><b>Username</b>
-                    <input type="text" placeholder="Enter Username" name="uname" required></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required autocomplete="off"></label>
               
                     <label><b>Password</b>
-                    <input type="password" placeholder="Enter Password" name="psw" required></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required autocomplete="off"></label>
               
                     <button class="formbtn" type="submit">Login</button>
                     <button class="formbtn cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
@@ -75,7 +75,7 @@
     </header>
     <main id="redirect-main">
        <section class="redirect">
-            <h1>Logged in Successfully</h1>
+            <h1 class="login-msg">Attempting Login</h1>
             <p>Page will redirect in <span class="count-down"></span> seconds</p>
        </section>
     </main>
