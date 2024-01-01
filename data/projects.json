@@ -88,6 +88,12 @@
                     "para": "This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment."
                 },
                 {
+                    "para":"This application started by using a MySQL database; mainly as a way to see the schema we were working with. We used Python and the Streamlit library to connect to the database and create a web interface to access it. To have the database be more readily available to use, we switched over to using SQLite."
+                },
+                {
+                    "para":"The application allows the verified user to add, view, edit, and delete data from the database."
+                },
+                {
                     "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
                 }
             ]
