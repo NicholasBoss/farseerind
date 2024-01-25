@@ -26,6 +26,11 @@
 			"project": "Madison Fire Department",
 			"position": "Project Manager",
 			"description": "Currently helping the Madison Fire Department by creating a web application that would allow them to track their inventory."
+		},
+		{
+			"project": "ClearView",
+			"position": "Project Manager",
+			"description": "Currently helping ClearView to create a database and web application to allow the organization of their work orders."
 		}
 	],
 	"skills": [

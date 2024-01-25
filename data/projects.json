@@ -97,6 +97,26 @@
                     "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
                 }
             ]
+        },
+        {
+            "name": "ClearView",
+            "description": "This is a database that a team and I created for ClearView in the Data Science Society at BYU-Idaho. It allows them to keep track of their work orders.",
+            "link": "clearview.html",
+            "githubLink": "#",
+            "fullDescription": [
+                {
+                    "para": "This is a database that a team and I created for ClearView in the Data Science Society at BYU-Idaho. It allows them to keep track of their work orders."
+                },
+                {
+                    "para":"The database that we will start this project in is a MySQL database; mainly as a way to see the schema we were working with. We will use Python and the Streamlit library to connect to the database and create a web interface to access it. To have the database be more readily available to use, we hope to use SQLite."
+                },
+                {
+                    "para":"The application allows the verified user to add, view, edit, and delete data from the database."
+                },
+                {
+                    "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
+                }
+            ]
         }
 
     ]
