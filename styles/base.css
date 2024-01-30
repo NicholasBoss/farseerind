@@ -527,6 +527,7 @@ footer {
 	margin: 10px auto;
 	width: 90%;
     height: 500px;
+	border: 1px solid var(--accent2-color);
 }
 
 .ta-class {

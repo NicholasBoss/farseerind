@@ -129,6 +129,8 @@
     .widget {
         width: 100%;
         height: 75%;
+        border-left: none;
+        border-right: none;
     }
 
     /* .calendly-inline-widget {
