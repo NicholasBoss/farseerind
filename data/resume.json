@@ -38,6 +38,9 @@
 			"skill": "MySQL"
 		},
 		{
+			"skill": "AWS"
+		},
+		{
 			"skill": "HTML"
 		},
 		{
@@ -81,6 +84,9 @@
 				},
 				{
 					"para": "Substitute taught various topics such as database normalization, ERD creation, CRUD, CSS grid, HTML, JavaScript"
+				},
+				{
+					"para": "Assisted in supporting the AWS system students use for their classes"
 				}
 			]
 		}
