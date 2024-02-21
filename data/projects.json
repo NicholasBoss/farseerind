@@ -117,6 +117,20 @@
                     "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
                 }
             ]
+        },
+        {
+            "name": "Film Database Frontend",
+            "description": "This Application is a frontend for a film database. It allows teh user to add, view, edit, and delete data from the database.",
+            "link": "film.html",
+            "githubLink": "https://github.com/NicholasBoss/film_application",
+            "fullDescription": [
+                {
+                    "para": "This Application is a frontend for a film database. It allows teh user to add, view, edit, and delete data from the database."
+                },
+                {
+                    "para":"The inspiration for this project came from the Intro to Databases class that I TA for. There arose a question about the need for primary keys in each table. This database shows that need through the updates of the linking tables."
+                }
+            ]
         }
 
     ]
