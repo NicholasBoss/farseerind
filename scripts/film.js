@@ -14,6 +14,7 @@ function displayCard (data) {
 
     film.innerHTML = `
         <h4>${filmData.name}</h4>
+        <img src="${filmData.projectImage}" alt="${filmData.name}">
         ${fullDescriptionList}
         <a href="${filmData.githubLink}" target="_blank">View Project</a>
     `;
