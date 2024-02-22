@@ -120,7 +120,7 @@
         },
         {
             "name": "Film Database Frontend",
-            "description": "This Application is a frontend for a film database. It allows teh user to add, view, edit, and delete data from the database.",
+            "description": "This Application is a frontend for a film database. It allows the user to add, view, edit, and delete data from the database.",
             "link": "film.html",
             "githubLink": "https://github.com/NicholasBoss/film_application",
             "projectImage": "images/film_frontend.jpg",
