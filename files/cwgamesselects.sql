@@ -1,4 +1,4 @@
--- Questions for Concept Workshop using cwgames -- COPYRIGHT FARSEEER INDUSTRIES 2023
+-- Questions for Concept Workshop using cwgames -- COPYRIGHT Nicholas Boss 2024
 
 USE cwgames;
 --------------------------------------
