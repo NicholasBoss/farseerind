@@ -28,7 +28,7 @@ VALUES
 ('Crash Bandicoot 1','1996-09-09',2),
 ('Crash Bandicoot 2: Cortex Strikes Back','1997-10-31',2),
 ('Crash Bandicoot 3: Warped','1998-10-31',2),
-('Uncharted 3: Drake''s Deception ','2011-10-01',3),
+('Uncharted 3: Drake''s Deception','2011-10-01',3),
 ('Tetris Evolution','2007-04-19',2),
 ('Medal of Honor: Pacific Assault','2004-10-04',3),
 ('Elder Scrolls V: Skyrim Special Edition','2011-11-11',4);
