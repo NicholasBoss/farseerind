@@ -68,8 +68,8 @@ DROP TABLE IF EXISTS `cwgames`.`company` ;
 CREATE TABLE IF NOT EXISTS `cwgames`.`company` (
   `company_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `company_name` VARCHAR(45) NOT NULL,
-  `is_developer` TINYINT NULL,
-  `is_publisher` TINYINT NULL,
+  `is_developer` CHAR(1) NULL,
+  `is_publisher` CHAR(1) NULL,
   PRIMARY KEY (`company_id`))
 ENGINE = InnoDB;
 
@@ -121,7 +121,7 @@ CREATE TABLE IF NOT EXISTS `cwgames`.`game_platform` (
   `platform_id` INT UNSIGNED NOT NULL,
   `owner_id` INT UNSIGNED NOT NULL,
   `price_id` INT UNSIGNED NULL,
-  `has_played` TINYINT NULL,
+  `has_played` CHAR(1) NULL,
   PRIMARY KEY (`game_platform_id`),
   INDEX `game_platform_idx1` (`platform_id` ASC) VISIBLE,
   INDEX `game_platform_idx2` (`game_id` ASC) VISIBLE,

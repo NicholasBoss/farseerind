@@ -74,20 +74,20 @@ VALUES
 INSERT INTO company
 (company_name, is_developer, is_publisher)
 VALUES
-('Ubisoft',1,0),
-('Nintendo',1,1),
-('343 Industries',1,0),
-('Bungee',1,0),
-('Xbox Game Studios',0,1),
-('Tobyfox',1,1),
-('Feperd Games',1,1),
-('Warner Bros. Interactive Media Entertainment',0,1),
-('Square Enix',0,1),
-('Moon Studios GmbH',1,0),
-('Sony',0,1),
-('Mass Media Inc',0,1),
-('Electronic Arts',1,1),
-('Bethesda',1,1);
+('Ubisoft','y','n'),
+('Nintendo','y','y'),
+('343 Industries','y','n'),
+('Bungee','y','n'),
+('Xbox Game Studios','n','y'),
+('Tobyfox','y','y'),
+('Feperd Games','y','y'),
+('Warner Bros. Interactive Media Entertainment','n','y'),
+('Square Enix','n','y'),
+('Moon Studios GmbH','y','n'),
+('Sony','n','y'),
+('Mass Media Inc','n','y'),
+('Electronic Arts','y','y'),
+('Bethesda','y','y');
 
 -- Price inserts
 INSERT INTO price
@@ -185,23 +185,23 @@ VALUES
 INSERT INTO game_platform
 (game_id, platform_id, price_id, owner_id, has_played)
 VALUES
-(1,1,1,1,1),
-(2,2,2,1,1),
-(3,1,3,1,1),
-(4,1,4,2,1),
-(5,1,5,2,1),
-(6,3,6,1,1),
-(7,1,7,2,0),
-(8,1,8,2,1),
-(9,6,9,2,1),
-(10,7,10,2,1),
-(11,1,10,1,0),
-(12,4,7,3,1),
-(13,4,11,3,1),
-(14,4,11,3,1),
-(15,5,12,3,1),
-(16,5,7,3,1),
-(17,1,13,3,1),
-(18,1,3,1,1);
+(1,1,1,1,'y'),
+(2,2,2,1,'y'),
+(3,1,3,1,'y'),
+(4,1,4,2,'y'),
+(5,1,5,2,'y'),
+(6,3,6,1,'y'),
+(7,1,7,2,'n'),
+(8,1,8,2,'y'),
+(9,6,9,2,'y'),
+(10,7,10,2,'y'),
+(11,1,10,1,'n'),
+(12,4,7,3,'y'),
+(13,4,11,3,'y'),
+(14,4,11,3,'y'),
+(15,5,12,3,'y'),
+(16,5,7,3,'y'),
+(17,1,13,3,'y'),
+(18,1,3,1,'y');
 
 -- COPYRIGHT Nicholas Boss 2024
