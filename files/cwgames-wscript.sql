@@ -116,12 +116,13 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `cwgames`.`game_platform` ;
 
 CREATE TABLE IF NOT EXISTS `cwgames`.`game_platform` (
+  `game_platform_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `game_id` INT UNSIGNED NOT NULL,
   `platform_id` INT UNSIGNED NOT NULL,
   `owner_id` INT UNSIGNED NOT NULL,
   `price_id` INT UNSIGNED NULL,
   `has_played` TINYINT NULL,
-  PRIMARY KEY (`game_id`, `platform_id`, `owner_id`),
+  PRIMARY KEY (`game_platform_id`),
   INDEX `game_platform_idx1` (`platform_id` ASC) VISIBLE,
   INDEX `game_platform_idx2` (`game_id` ASC) VISIBLE,
   INDEX `game_platform_idx3` (`price_id` ASC) VISIBLE,
@@ -155,9 +156,10 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `cwgames`.`game_genre` ;
 
 CREATE TABLE IF NOT EXISTS `cwgames`.`game_genre` (
+  `game_genre_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `game_id` INT UNSIGNED NOT NULL,
   `genre_id` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`game_id`, `genre_id`),
+  PRIMARY KEY (`game_genre_id`),
   INDEX `game_genre_idx1` (`genre_id` ASC) VISIBLE,
   INDEX `game_game_idx2` (`game_id` ASC) VISIBLE,
   CONSTRAINT `game_genre_fk1`
@@ -179,9 +181,10 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `cwgames`.`game_company` ;
 
 CREATE TABLE IF NOT EXISTS `cwgames`.`game_company` (
+  `game_company_id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `game_id` INT UNSIGNED NOT NULL,
   `company_id` INT UNSIGNED NOT NULL,
-  PRIMARY KEY (`game_id`, `company_id`),
+  PRIMARY KEY (`game_company_id`),
   INDEX `game_company_idx1` (`company_id` ASC) VISIBLE,
   INDEX `game_company_idx2` (`game_id` ASC) VISIBLE,
   CONSTRAINT `game_company_fk1`
