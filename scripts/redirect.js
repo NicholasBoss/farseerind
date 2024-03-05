@@ -11,7 +11,7 @@ document.querySelector('.count-down').textContent = count;
 let countdown = setInterval(function() {
     count--;
     document.querySelector('.count-down').textContent = count;
-    if (count === 0 && username =='admin' && password == 'admin') {
+    if (count === 0 && username =='admin' && password == 'WorkshopAdmin123!') {
         clearInterval(countdown);
         msg.textContent = "Redirecting to admin page...";
         // pause for 1 second before redirecting
