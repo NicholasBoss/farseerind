@@ -49,20 +49,6 @@ USE cwgames;
 -- Difficulty: Hard
 -- Example
 --------------------------------------
--- You and a friend want to play through all of your games, 
--- but you want to do it in a random order. 
--- You have a great idea to use your database to assign a random number
--- to each game and sort it in ascending order to create this list.
--- You just played through all of the Assassins Creed games though, 
--- so you want to leave those out. 
--- To try to avoid ties, make the random number between 1 and 100.
-
-
---------------------------------------
--- Question 6
--- Difficulty: Hard
--- Example
---------------------------------------
 -- How long have the games been around? 
 -- Floor the date to the nearest year, 
 -- add 'years' to the end of the number given 
@@ -74,7 +60,7 @@ USE cwgames;
             -- WEEK 09 --
 --------------------------------------
 --------------------------------------
--- Question 7
+-- Question 6
 -- Difficulty: Easy
 -- Practice
 --------------------------------------
@@ -82,7 +68,7 @@ USE cwgames;
 
 
 --------------------------------------
--- Question 8
+-- Question 7
 -- Difficulty: Medium
 -- Practice
 --------------------------------------
@@ -90,7 +76,7 @@ USE cwgames;
 
 
 --------------------------------------
--- Question 9
+-- Question 8
 -- Difficulty: Hard
 -- Example
 --------------------------------------
@@ -99,7 +85,7 @@ USE cwgames;
 
 
 --------------------------------------
--- Question 10
+-- Question 9
 -- Difficulty: Hard
 -- Practice
 --------------------------------------
@@ -111,7 +97,7 @@ USE cwgames;
 
 
 --------------------------------------
--- Question 11
+-- Question 10
 -- Difficulty: Hard
 -- Example
 --------------------------------------
