@@ -131,6 +131,10 @@
 		{
 			"name": "Head Counter App",
 			"description": "Created a mobile app to keep track of the number of students in the classes I TA for."
+		},
+		{
+			"name": "Film Database Frontend",
+			"description": "Created a frontend for a database that students were working on to show the importance of using primary keys in every table."
 		}
 	],
 	"honor": [
