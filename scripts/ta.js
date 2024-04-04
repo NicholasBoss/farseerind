@@ -9,10 +9,11 @@ const semester = document.querySelector('#semester');
 function displaySemester(data) {
     // let callink = data.calendly[0];
     const today = new Date();
-    if (today >= new Date(2023, 11, 8) && today <= new Date(2024, 4, 1)) {
+    // console.log(new DATE(today));
+    if (today >= new Date(2023, 11, 8) && today <= new Date(2024, 3, 1)) {
         semester.innerHTML = "WINTER 2024";
         // calendlyWidget.setAttribute('data-url', `${callink.winter}`);
-    } else if (today >= new Date(2024, 4, 1) && today <= new Date(2024, 7, 14)) {
+    } else if (today >= new Date(2024, 3, 1) && today <= new Date(2024, 7, 14)) {
         semester.innerHTML = "SPRING 2024";
         // calendlyWidget.setAttribute('data-url', `${callink.spring}`);
     } else if (today >= new Date(2024, 9, 11) && today <= new Date(2024, 11, 14)) {

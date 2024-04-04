@@ -10,44 +10,58 @@
     "classes" : [
         {
             "name" : "Intro to Databases",
-            "code": "CIT 111",
-            "section": "3",
+            "code": "ITM 111",
+            "section": "7",
             "time": "MWF 9:00AM",
-            "teacher": "Brother Christensen"
-        },
-        {
-            "name" : "Intro to Databases",
-            "code": "CIT 111",
-            "section": "1",
-            "time": "MWF 11:30AM",
             "teacher": "Brother Robertson"
         },
         {
             "name" : "Intro to Databases",
-            "code": "CIT 111",
-            "section": "2",
+            "code": "ITM 111",
+            "section": "5",
             "time": "MWF 12:45PM",
-            "teacher": "Brother Clark"
+            "teacher": "Brother Robertson"
         },
         {
             "name" : "Intro to Databases",
-            "code": "CIT 111",
-            "section": "5",
+            "code": "ITM 111",
+            "section": "3",
             "time": "MWF 2:00PM",
             "teacher": "Brother Clark"
         },
         {
-            "name" : "Intro to Databases",
-            "code": "CIT 111",
-            "section": "4",
-            "time": "TR 8:00AM",
+            "name" : "Web Fundamentals",
+            "code": "WDD 130",
+            "section": "3",
+            "time": "MW 9:00AM",
             "teacher": "Brother Christensen"
         },
         {
             "name" : "Web Fundamentals",
             "code": "WDD 130",
-            "section": "1",
+            "section": "4",
             "time": "MW 10:15AM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "Web Fundamentals",
+            "code": "WDD 130",
+            "section": "5",
+            "time": "TR 12:45PM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "Web Fundamentals",
+            "code": "WDD 130",
+            "section": "6",
+            "time": "TR 2:00PM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "Intro to Cloud Computing",
+            "code": "ITM 101",
+            "section": "2",
+            "time": "TR 10:15AM",
             "teacher": "Brother Christensen"
         }
     ]
