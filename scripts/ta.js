@@ -10,15 +10,15 @@ function displaySemester(data) {
     // let callink = data.calendly[0];
     const today = new Date();
     // console.log(new DATE(today));
-    if (today >= new Date(2023, 11, 8) && today <= new Date(2024, 3, 1)) {
+    if (today >= new Date(2023, 11, 8) && today <= new Date(2024, 3, 9)) {
         semester.innerHTML = "WINTER 2024";
-        // calendlyWidget.setAttribute('data-url', `${callink.winter}`);
-    } else if (today >= new Date(2024, 3, 1) && today <= new Date(2024, 7, 14)) {
+        // calendlyWidget.setAttribute('data-url', `${callink['winter']}`);
+    } else if (today >= new Date(2024, 3, 22) && today <= new Date(2024, 7, 14)) {
         semester.innerHTML = "SPRING 2024";
-        // calendlyWidget.setAttribute('data-url', `${callink.spring}`);
+        // calendlyWidget.setAttribute('data-url', `${callink['spring']}`);
     } else if (today >= new Date(2024, 9, 11) && today <= new Date(2024, 11, 14)) {
         semester.innerHTML = "FALL 2024";
-        // calendlyWidget.setAttribute('data-url', `${callink.fall}`);
+        // calendlyWidget.setAttribute('data-url', `${callink['fall']}`);
     } else {
         classes.style.display = "none";
         calendly.innerHTML = `<h2>I am currently out of office. Please check back when the next semester begins.</h2>`;
