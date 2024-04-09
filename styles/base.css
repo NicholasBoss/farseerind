@@ -377,7 +377,7 @@ img.avatar {
 	text-align: left;
 }
 
-.para a {
+.para a, .prof-para a {
 	text-decoration: none;
 	background-color: var(--nav-background-color);
 	color: var(--accent2-color);
@@ -385,7 +385,7 @@ img.avatar {
 	border-radius: 5px;
 }
 
-.para a:hover {
+.para a:hover, .prof-para a:hover {
 	color: var(--nav-hover-link-color);
 	background-color: var(--nav-hover-background-color);
 	font-weight: 700;
