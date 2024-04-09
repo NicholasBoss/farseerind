@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nicholas Boss - Computing Society Project Database Page">
+    <meta name="author" content="Nicholas Boss">
+    <meta property="og:title" content="Computing Society Project Database">
+    <meta property="og:description" content="Nicholas Boss - Computing Society Project Database Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/NicholasBoss/farseerind/main/images/nicholas-boss-logo.png">
+    <meta property="og:url" content="https://nicholasboss.github.io/farseerind/computing.html">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Computing Society Project Database</title>
+    <script src="./scripts/hamburger-menu.js" defer></script>
+    <script src="./scripts/getdates.js" defer></script>
+    <script src="./scripts/projectnames.js" defer></script>
+    <script src="./scripts/dropdown.js" defer></script>
+    <script src="./scripts/computing.js" defer></script>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="./images/nicholas-boss-logo.png" alt="Nicholas Boss Logo">
+        </a>
+        <button id="menu" aria-label="hamburger-menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+                <li id="active" class="projects">
+                    <a href="projects.html">Projects</a>
+                    <img class="dropbtn" src="./images/angle-down-solid.svg" alt="Angle Down Icon">
+                    <div id="dropdown" class="dropdown-content project-names"></div>
+                </li>
+                <li>
+                    <a href="tainfo.html">TA</a>
+                </li>
+                <li class="login">
+                    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+                </li>
+            </ul>
+        </nav>
+        <div id="login-form">
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+                <!-- Modal Content -->
+                <form class="modal-content animate" action="redirect.html" method="get">
+                  <div class="imgcontainer">
+                    <img src="./images/nicholas-boss-logo.png" alt="Avatar" class="avatar">
+                  </div>
+              
+                  <div class="container">
+                    <label><b>Username</b>
+                    <input type="text" placeholder="Enter Username" name="uname" required autocomplete="off"></label>
+              
+                    <label><b>Password</b>
+                    <input type="password" placeholder="Enter Password" name="psw" required autocomplete="off"></label>
+              
+                    <button class="formbtn" type="submit">Login</button>
+                    <button class="formbtn cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'">Cancel</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </header>
+    <main id="computing-main">
+       <div class="project-card">
+            
+       </div>
+    </main>
+    <footer>
+        <div class="info">
+            <p>Nicholas Boss &copy; <span id="currentyear"></span></p>
+        </div>
+        <div class="modified">
+            <p>
+                <a href="site-plan.html">Site Plan</a>
+            </p>
+            <p>Last Modified: <span id="lastmodified"></span></p>
+        </div>
+        <div class="contact">
+            <p class="social">
+                <a href="https://www.facebook.com/nicholas.boss.376/">
+                    <img class="icon" src="images/facebook.svg" alt="Facebook Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/nicholas-boss">
+                    <img class="icon" src="images/linkedin-in.svg" alt="LinkedIn Icon">
+                </a>
+                <a href="https://github.com/NicholasBoss">
+                    <img class="icon" src="images/github.svg" alt="GitHub Icon">
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

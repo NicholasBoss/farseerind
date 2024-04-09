@@ -153,6 +153,24 @@
                     "para":"Because this program is used for grading, I cannot provide a link to the GitHub repository."
                 }
             ]
+        },
+        {
+            "name": "Computing Team Database",
+            "description": "This project shows how to combine the languages of Python and SQL to create a simple database.",
+            "link": "computing.html",
+            "githubLink": "https://github.com/NicholasBoss/computingprojectapplication",
+            "projectImage": "images/computingprojectdb.jpg",
+            "fullDescription": [
+                {
+                    "para": "This project shows how to combine the languages of Python and SQL to create a simple database."
+                },
+                {
+                    "para":"The database can be created using either MySQL or SQLite. The Streamlit library allows the application to be used on the web. There are three \"users\" implemented: no user, a student user, and an admin user."
+                },
+                {
+                    "para":"The \"no user\" can only view the projects from the database. The \"student user\" can view the projects and add a project to the database. The \"admin user\" can view the projects, add, update, or delete a project, and even reset the database entirely."
+                }
+            ]
         }
 
     ]
