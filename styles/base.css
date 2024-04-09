@@ -9,8 +9,6 @@
     --ham-color: #f07142;
     
 	/* Fonts */
-	/* --heading-font: "Dancing Script", sans-serif; */
-	/* --paragraph-font: "EB Garamond", Helvetica, sans-serif; */
 	--heading-font: "Times New Roman", serif;
 	--paragraph-font: "Arial", sans-serif;
     
@@ -543,6 +541,7 @@ footer {
 	text-align: left;
 	margin-left: 10%;
 }
+
 
 /* INDIVIDUAL PROJECT PAGES */
 
