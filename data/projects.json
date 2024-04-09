@@ -134,7 +134,7 @@
             ]
         },
         {
-            "name": "Grading Program",
+            "name": "Auto Grading Program",
             "description": "I created a program that will help teachers and TAs grade assignments for the ITM 111 (Intro to Database) class at BYU-Idaho.",
             "link": "grading.html",
             "githubLink": "",
