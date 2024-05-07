@@ -1,6 +1,7 @@
 // const contact = document.querySelector('.res-contact');
 const education = document.querySelector('.res-education');
 const dss = document.querySelector('.res-dss');
+const computingTeam = document.querySelector('.res-computing-team');
 const skills = document.querySelector('.res-skills');
 const professional = document.querySelector('.res-prof-exp');
 const personal = document.querySelector('.res-pers-exp');
@@ -20,6 +21,8 @@ function displayResume(data) {
     educationElement.classList.add('grid');
     const dssElement = document.createElement('div');
     dssElement.classList.add('grid');
+    const computingTeamElement = document.createElement('div');
+    computingTeamElement.classList.add('grid');
     const skillsElement = document.createElement('div');
     skillsElement.classList.add('grid');
     const professionalElement = document.createElement('div');
@@ -69,6 +72,22 @@ function displayResume(data) {
             <li>${dss.description}</li>
         `;
         dssElement.appendChild(dssItem);
+    });
+
+    // computing_team
+
+    let computingTeamData = data.computing_team;
+    console.log(computingTeamData);
+    computingTeamData.forEach(computingTeam => {
+        console.log(computingTeam.project);
+        const computingTeamItem = document.createElement('ul');
+        computingTeamItem.innerHTML = `
+            <li>Company: ${computingTeam.project}</li>
+            <li>Position: ${computingTeam.position}</li>
+            <li>${computingTeam.description}</li>
+         `;
+        computingTeamElement.appendChild(computingTeamItem);
+        console.log(computingTeamElement);
     });
 
     // Skills
@@ -206,6 +225,7 @@ function displayResume(data) {
     // contact.appendChild(contactElement);
     education.appendChild(educationElement);
     dss.appendChild(dssElement);
+    computingTeam.appendChild(computingTeamElement);
     skills.appendChild(skillsElement);
     professional.appendChild(professionalElement);
     personal.appendChild(personalElement);

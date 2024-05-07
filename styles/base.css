@@ -431,6 +431,10 @@ footer {
 	padding: 1rem;
 }
 
+#resume-main .res-computing-team {
+	padding: 1rem;
+}
+
 #resume-main .res-prof-exp {
 	padding: 1rem;
 }
@@ -464,6 +468,7 @@ footer {
 .res-skills .grid,
 .res-education .grid,
 .res-dss .grid,
+.res-computing-team .grid,
 .res-prof-exp .grid,
 .res-pers-exp .grid,
 .res-projects .grid {

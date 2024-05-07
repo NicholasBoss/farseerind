@@ -33,6 +33,13 @@
 			"description": "Currently helping ClearView to create a database and web application to allow the organization of their work orders."
 		}
 	],
+	"computing_team": [
+		{
+			"project": "BYU-Idaho Computing Team",
+			"position": "President",
+			"description": "Currently working with the BYU-Idaho Computing Team to create a basic web application that will help students hold a list of projects."
+		}
+	],
 	"skills": [
 		{
 			"skill": "MySQL"
