@@ -14,24 +14,24 @@ VALUES
 INSERT INTO game
 (game_title, release_date, rating_id)
 VALUES
-('Assassins Creed: Black Flag','2013-10-29',4),
-('Legend of Zelda: Twilight Princess','2006-11-19',3),
-('Halo: The Master Chief Collection','2019-12-03',4),
-('Undertale','2015-09-15',2),
-('Spark the Electric Jester 3','2022-08-24',5),
-('Legend of Zelda: Ocarina of Time','1998-11-21',1),
-('Scribblenauts Unmasked','2013-09-24',2),
-('Octopath Traveller','2019-06-07',3),
-('Fossil Fighters','2009-08-10',1),
-('Fossil Fighters: Frontier','2014-02-27',2),
-('Ori and the Will of the Wisps','2020-03-10',1),
-('Crash Bandicoot 1','1996-09-09',2),
-('Crash Bandicoot 2: Cortex Strikes Back','1997-10-31',2),
-('Crash Bandicoot 3: Warped','1998-10-31',2),
-('Uncharted 3: Drake''s Deception','2011-10-01',3),
-('Tetris Evolution','2007-04-19',2),
-('Medal of Honor: Pacific Assault','2004-10-04',3),
-('Elder Scrolls V: Skyrim Special Edition','2011-11-11',4);
+('Assassins Creed: Black Flag','2013-10-29',(SELECT rating_id FROM rating WHERE rating_level = 'M')),
+('Legend of Zelda: Twilight Princess','2006-11-19',(SELECT rating_id FROM rating WHERE rating_level = 'T')),
+('Halo: The Master Chief Collection','2019-12-03',(SELECT rating_id FROM rating WHERE rating_level = 'M')),
+('Undertale','2015-09-15',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Spark the Electric Jester 3','2022-08-24',(SELECT rating_id FROM rating WHERE rating_level = 'NR')),
+('Legend of Zelda: Ocarina of Time','1998-11-21',(SELECT rating_id FROM rating WHERE rating_level = 'E')),
+('Scribblenauts Unmasked','2013-09-24',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Octopath Traveller','2019-06-07',(SELECT rating_id FROM rating WHERE rating_level = 'T')),
+('Fossil Fighters','2009-08-10',(SELECT rating_id FROM rating WHERE rating_level = 'E')),
+('Fossil Fighters: Frontier','2014-02-27',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Ori and the Will of the Wisps','2020-03-10',(SELECT rating_id FROM rating WHERE rating_level = 'E')),
+('Crash Bandicoot 1','1996-09-09',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Crash Bandicoot 2: Cortex Strikes Back','1997-10-31',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Crash Bandicoot 3: Warped','1998-10-31',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Uncharted 3: Drake''s Deception','2011-10-01',(SELECT rating_id FROM rating WHERE rating_level = 'T')),
+('Tetris Evolution','2007-04-19',(SELECT rating_id FROM rating WHERE rating_level = 'E10+')),
+('Medal of Honor: Pacific Assault','2004-10-04',(SELECT rating_id FROM rating WHERE rating_level = 'T')),
+('Elder Scrolls V: Skyrim Special Edition','2011-11-11',(SELECT rating_id FROM rating WHERE rating_level = 'M'));
 
 -- Genre inserts
 INSERT INTO genre
@@ -47,7 +47,7 @@ VALUES
 ('Strategy'),
 ('Indie'),
 ('Casual'),
-('Third-pesron Shooter'),
+('Third-person Shooter'),
 ('Fantasy');
 
 -- Owner inserts
@@ -57,6 +57,7 @@ VALUES
 ('Nick','Boss'),
 ('Austin','Longhurst'),
 ('Christian','Mijangos');
+
 
 -- Platform inserts
 INSERT INTO platform
@@ -69,6 +70,7 @@ VALUES
 ('Playstation 3'),
 ('NDS'),
 ('3DS');
+
 
 -- Company inserts
 INSERT INTO company
@@ -89,6 +91,7 @@ VALUES
 ('Electronic Arts','y','y'),
 ('Bethesda','y','y');
 
+
 -- Price inserts
 INSERT INTO price
 ( price_value )
@@ -107,101 +110,802 @@ VALUES
 (35.85),
 (25.99);
 
+
 -- gameCompany
 INSERT INTO game_company
 (game_id, company_id)
 VALUES
-(1,1),
-(2,2),
-(3,3),
-(3,4),
-(3,5),
-(4,6),
-(5,7),
-(6,2),
-(7,8),
-(8,9),
-(9,2),
-(10,2),
-(11,10),
-(11,5),
-(12,11),
-(13,11),
-(14,11),
-(15,11),
-(16,12),
-(17,13),
-(18,14);
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Ubisoft')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Nintendo')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = '343 Industries')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Bungee')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Xbox Game Studios')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Undertale')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Tobyfox')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Spark the Electric Jester 3')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Feperd Games')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Ocarina of Time')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Nintendo')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,    (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Warner Bros. Interactive Media Entertainment')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Octopath Traveller')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Square Enix')
+),
+(   
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Nintendo')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters: Frontier')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Nintendo')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Ori and the Will of the Wisps')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Moon Studios GmbH')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Ori and the Will of the Wisps')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Xbox Game Studios')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 1')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Sony')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 2: Cortex Strikes Back')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Sony')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 3: Warped')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Sony')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Uncharted 3: Drake''s Deception')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Sony')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Tetris Evolution')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Mass Media Inc')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Medal of Honor: Pacific Assault')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Electronic Arts')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT company_id
+    FROM   company
+    WHERE  company_name = 'Bethesda')
+);
 
--- gameGenre inserts
+-- game_genre inserts
 INSERT INTO game_genre
-(game_id, genre_id)
+(game_id,genre_id)
 VALUES
-(1,1),
-(1,2),
-(1,3),
-(1,4),
-(2,1),
-(2,2),
-(2,5),
-(2,6),
-(3,7),
-(3,4),
-(3,8),
-(3,1),
-(4,9),
-(4,5),
-(5,1),
-(5,9),
-(6,1),
-(6,2),
-(6,6),
-(7,1),
-(7,2),
-(7,10),
-(7,8),
-(8,5),
-(9,5),
-(10,5),
-(11,1),
-(11,2),
-(12,1),
-(12,2),
-(13,1),
-(13,2),
-(14,1),
-(14,2),
-(15,1),
-(15,2),
-(15,11),
-(16,6),
-(17,7),
-(18,1),
-(18,2),
-(18,5),
-(18,12);
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Open World')
+),
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Story')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Puzzle')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'FPS')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Story')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Strategy')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Undertale')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Indie')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Undertale')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Spark the Electric Jester 3')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Spark the Electric Jester 3')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Indie')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Ocarina of Time')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Ocarina of Time')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Ocarina of Time')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Puzzle')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Casual')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Strategy')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Octopath Traveller')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters: Frontier')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Ori and the Will of the Wisps')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Ori and the Will of the Wisps')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 1')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 1')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 2: Cortex Strikes Back')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 2: Cortex Strikes Back')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 3: Warped')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 3: Warped')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Uncharted 3: Drake''s Deception')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Uncharted 3: Drake''s Deception')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Uncharted 3: Drake''s Deception')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Third-person Shooter')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Tetris Evolution')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Puzzle')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Medal of Honor: Pacific Assault')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'FPS')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Action')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Adventure')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Role-Playing')
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT genre_id
+    FROM   genre
+    WHERE  genre_type = 'Fantasy')
+);
 
 -- gamePlatform inserts
 INSERT INTO game_platform
 (game_id, platform_id, price_id, owner_id, has_played)
 VALUES
-(1,1,1,1,'y'),
-(2,2,2,1,'y'),
-(3,1,3,1,'y'),
-(4,1,4,2,'y'),
-(5,1,5,2,'y'),
-(6,3,6,1,'y'),
-(7,1,7,2,'n'),
-(8,1,8,2,'y'),
-(9,6,9,2,'y'),
-(10,7,10,2,'y'),
-(11,1,10,1,'n'),
-(12,4,7,3,'y'),
-(13,4,11,3,'y'),
-(14,4,11,3,'y'),
-(15,5,12,3,'y'),
-(16,5,7,3,'y'),
-(17,1,13,3,'y'),
-(18,1,3,1,'y');
+(
+    (SELECT game_id
+	FROM   game
+    WHERE  game_title = 'Assassins Creed: Black Flag')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 16.95)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Twilight Princess')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Wii')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 44.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Halo: The Master Chief Collection')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 39.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Undertale')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 9.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Spark the Electric Jester 3')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 24.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Legend of Zelda: Ocarina of Time')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'N64')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 41.92)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Scribblenauts Unmasked')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 19.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'n'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Octopath Traveller')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 59.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'NDS')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 74.78)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Fossil Fighters: Frontier')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = '3DS')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 29.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Austin' AND last_name = 'Longhurst')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Ori and the Will of the Wisps')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 29.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'n'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 1')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Playstation 1')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 19.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 2: Cortex Strikes Back')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Playstation 1')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 21.00)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Crash Bandicoot 3: Warped')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Playstation 1')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 21.00)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Uncharted 3: Drake''s Deception')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Playstation 3')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 35.85)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Tetris Evolution')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'Playstation 3')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 19.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Medal of Honor: Pacific Assault')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 25.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Christian' AND last_name = 'Mijangos')
+,   'y'
+),
+(
+    (SELECT game_id
+    FROM   game
+    WHERE  game_title = 'Elder Scrolls V: Skyrim Special Edition')
+,   (SELECT platform_id
+    FROM   platform
+    WHERE  platform_name = 'PC')
+,   (SELECT price_id 
+    FROM price 
+    WHERE price_value = 39.99)
+,   (SELECT owner_id
+    FROM   owner
+    WHERE  first_name = 'Nick' AND last_name = 'Boss')
+,   'y'
+);
 
--- COPYRIGHT Nicholas Boss 2024
+-- COPYRIGHT 2024, Nicholas Boss
