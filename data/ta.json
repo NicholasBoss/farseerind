@@ -10,50 +10,22 @@
         {
             "name" : "Intro to Databases",
             "code": "ITM 111",
-            "section": "7",
+            "section": "2",
             "time": "MWF 9:00AM",
-            "teacher": "Brother Robertson"
+            "teacher": "Brother Christensen"
         },
         {
             "name" : "Intro to Databases",
             "code": "ITM 111",
             "section": "5",
             "time": "MWF 12:45PM",
-            "teacher": "Brother Robertson"
-        },
-        {
-            "name" : "Intro to Databases",
-            "code": "ITM 111",
-            "section": "3",
-            "time": "MWF 2:00PM",
             "teacher": "Brother Clark"
         },
         {
             "name" : "Web Fundamentals",
             "code": "WDD 130",
-            "section": "3",
-            "time": "MW 9:00AM",
-            "teacher": "Brother Christensen"
-        },
-        {
-            "name" : "Web Fundamentals",
-            "code": "WDD 130",
-            "section": "4",
-            "time": "MW 10:15AM",
-            "teacher": "Brother Christensen"
-        },
-        {
-            "name" : "Web Fundamentals",
-            "code": "WDD 130",
-            "section": "5",
+            "section": "1",
             "time": "TR 12:45PM",
-            "teacher": "Brother Christensen"
-        },
-        {
-            "name" : "Web Fundamentals",
-            "code": "WDD 130",
-            "section": "6",
-            "time": "TR 2:00PM",
             "teacher": "Brother Christensen"
         },
         {

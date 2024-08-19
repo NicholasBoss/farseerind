@@ -12,10 +12,10 @@ function displaySemester(data) {
     const today = new Date();
     // today = Date(2024, 3, 22);
     // console.log(new DATE(today));
-    if (today >= new Date(2023, 11, 8) && today <= new Date(2024, 3, 9)) {
+    if (today >= new Date(2025, 0, 8) && today <= new Date(2025, 3, 10)) {
         semester.innerHTML = "WINTER 2024";
         // calendlyWidget.setAttribute('data-url', `${callink['winter']}`);
-    } else if (today >= new Date(2024, 3, 22) && today <= new Date(2024, 6, 14)) {
+    } else if (today >= new Date(2025, 3, 21) && today <= new Date(2025, 6, 23)) {
         semester.innerHTML = "SPRING 2024";
         // calendlyWidget.setAttribute('data-url', `${callink['spring']}`);
     } else if (today >= new Date(2024, 8, 16) && today <= new Date(2024, 11, 17)) {
@@ -26,7 +26,7 @@ function displaySemester(data) {
         help.style.display = "none";
 
         winter = new Date(2025, 0, 8);
-        spring = new Date(2024, 3, 22);
+        spring = new Date(2025, 3, 25);
         fall = new Date(2024, 8, 16);
 
         timer = fall - today;
