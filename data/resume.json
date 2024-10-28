@@ -37,7 +37,14 @@
 		{
 			"project": "BYU-Idaho Computing Team",
 			"position": "President",
-			"description": "Currently working with the BYU-Idaho Computing Team to create a basic web application that will help students hold a list of projects."
+			"description": [
+					{
+						"para": "Worked with the BYU-Idaho Computing Team to create a basic web application that will help students hold a list of projects."
+					},
+					{
+						"para": "Currently working with the team to create a website for the Computing Society."
+					}
+				]
 		}
 	],
 	"skills": [

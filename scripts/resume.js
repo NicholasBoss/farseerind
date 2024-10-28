@@ -77,17 +77,26 @@ function displayResume(data) {
     // computing_team
 
     let computingTeamData = data.computing_team;
-    console.log(computingTeamData);
+    // console.log(computingTeamData);
     computingTeamData.forEach(computingTeam => {
-        console.log(computingTeam.project);
+        // console.log(computingTeam.project);
         const computingTeamItem = document.createElement('ul');
+        compDescriptions = computingTeam.description;
+        // console.log(compDescriptions);
+        compDescription = [];
+        compDescriptions.forEach(description => {
+            compDescription.push(`<li>${description.para}</li>`);
+        });
+
+        compDescription = compDescription.join('');
+
         computingTeamItem.innerHTML = `
             <li>Company: ${computingTeam.project}</li>
             <li>Position: ${computingTeam.position}</li>
-            <li>${computingTeam.description}</li>
+            <li>${compDescription}</li>
          `;
         computingTeamElement.appendChild(computingTeamItem);
-        console.log(computingTeamElement);
+        // console.log(computingTeamElement);
     });
 
     // Skills
@@ -121,17 +130,17 @@ function displayResume(data) {
     // Append each professional element to the professional section
     // Use a foreach loop to get each professional
     let professionalData = data.professional;
-    console.log(professionalData);
+    // console.log(professionalData);
     professionalData.forEach(professional => {
         const professionalItem = document.createElement('ul');
         professionalItem.classList.add('professional');
         let descriptions = professional.description;
-        console.log(descriptions);
+        // console.log(descriptions);
         
         // Use a foreach loop to get each description
         let fullDescription = [];
         descriptions.forEach(description => {
-            console.log(description.para);
+            // console.log(description.para);
             fullDescription.push(`<li>${description.para}</li>`);
         });
 
