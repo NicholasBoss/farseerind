@@ -13,7 +13,7 @@
             "location": "Rexburg, ID",
 			"time": "September 2020 - Current",
 			"gpa": "3.8",
-			"expected": "Spring 2025"
+			"expected": "Winter 2026"
 		}
 	],
 	"dss": [
@@ -85,6 +85,9 @@
 			"description": [
 				{
 					"para": "Transferred data from AWS to Google Cloud using Cloud Run Functions and listeners running on a Cloud Compute Engine VM"
+				},
+				{
+					"para": "Created a ticketing system to help keep track of orders"
 				}
 			]
 		},
