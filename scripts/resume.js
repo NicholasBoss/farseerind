@@ -121,16 +121,17 @@ function displayResume(data) {
     // Append each professional element to the professional section
     // Use a foreach loop to get each professional
     let professionalData = data.professional;
-    // console.log(professionalData);
-    // console.log(descriptions);
-    let fullDescription = [];
+    console.log(professionalData);
     professionalData.forEach(professional => {
         const professionalItem = document.createElement('ul');
         professionalItem.classList.add('professional');
         let descriptions = professional.description;
+        console.log(descriptions);
         
         // Use a foreach loop to get each description
+        let fullDescription = [];
         descriptions.forEach(description => {
+            console.log(description.para);
             fullDescription.push(`<li>${description.para}</li>`);
         });
 

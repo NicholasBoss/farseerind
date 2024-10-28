@@ -80,20 +80,29 @@
 	],
 	"professional": [
 		{
-			"name": "Brigham Young University - Idaho Teaching Assistant",
-			"time": "Sept. 2021 - Present",
+			"name": "Legrande Health Data Technician Intern",
+			"time": "August 2024 - Present",
 			"description": [
 				{
-					"para": "Helped approximately 700+ students learn concepts in the ITM 111 (Intro to Databases) and WDD 130 (Web Fundamentals) courses"
+					"para": "Transferred data from AWS to Google Cloud using Cloud Run Functions and listeners running on a Cloud Compute Engine VM"
+				}
+			]
+		},
+		{
+			"name": "BYU-Idaho Teaching Assistant",
+			"time": "September 2021 - Present",
+			"description": [
+				{
+					"para": "Mentored approximately 1000+ students by helping others learn concepts in the Intro to Databases, Web Fundamentals, and Intro to Cloud courses"
 				},
 				{
-					"para": "Created a Concept Workshop that helped students prepare and succeed in their final exams"
+					"para": "Created a 2 hour Concept Workshop helping students prepare and succeed in final exams"
 				},
 				{
-					"para": "Substitute taught various topics such as database normalization, ERD creation, CRUD, CSS grid, HTML, JavaScript"
+					"para": "Taught various topics such as database normalization, ERD creation, CRUD, CSS grid, HTML, JavaScript"
 				},
 				{
-					"para": "Assisted in supporting the AWS system students use for their classes"
+					"para": "Integrated the AWS system students use for classes in the CSE Department"
 				}
 			]
 		}
