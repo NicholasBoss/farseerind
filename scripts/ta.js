@@ -27,18 +27,18 @@ function displaySemester(data) {
 
         winter = new Date(2025, 0, 8);
         spring = new Date(2025, 3, 25);
-        fall = new Date(2024, 8, 16);
+        fall = new Date(2025, 8, 15);
 
-        timer = fall - today;
+        timer = winter - today;
         days = 1000 * 60 * 60 * 24;
         if (Math.floor(timer / days) > 1) {
             calendly.innerHTML = `<h2>I am currently out of office. Please check back when the next semester begins.</h2>
-            <h3>The next semester begins in <ins>${Math.floor(timer / days)}</ins> days on ${fall.toDateString()}</h3>
+            <h3>The next semester begins in <ins>${Math.floor(timer / days)}</ins> days on ${winter.toDateString()}</h3>
             <p>If you need to contact me, please use Canvas messaging or Microsoft Teams.</p>
             `;
         } else {
             calendly.innerHTML = `<h2>I am currently out of office. Please check back when the next semester begins.</h2>
-            <h3>The next semester begins in <ins>${Math.floor(timer / days)}</ins> day on ${fall.toDateString()}</h3>
+            <h3>The next semester begins in <ins>${Math.floor(timer / days)}</ins> day on ${winter.toDateString()}</h3>
             <p>If you need to contact me, please use Canvas messaging or Microsoft Teams.</p>
             `;
         }
