@@ -1,7 +1,7 @@
 {
     "calendly" : [
         {
-        "winter": "https://calendly.com/d/4yv-pq4-7y9",
+        "winter": "https://calendly.com/d/cnhs-4cr-fyh",
         "spring": "https://calendly.com/d/4zy-rbv-m3t",
         "fall":   "https://calendly.com/d/3kv-n7v-vb2"
         }
@@ -10,30 +10,51 @@
         {
             "name" : "Intro to Databases",
             "code": "ITM 111",
-            "section": "3",
-            "time": "MWF 10:15AM",
+            "section": "1",
+            "time": "MWF 2:00PM",
             "teacher": "Brother Christensen"
         },
         {
             "name" : "Intro to Databases",
             "code": "ITM 111",
-            "section": "5",
-            "time": "MWF 12:45PM",
-            "teacher": "Brother Clark"
+            "section": "6",
+            "time": "MWF 3:15PM",
+            "teacher": "Brother Christensen"
         },
         {
-            "name" : "Web Fundamentals",
-            "code": "WDD 130",
-            "section": "1",
-            "time": "TR 12:45PM",
+            "name" : "Intro to Linux",
+            "code": "ITM 112",
+            "section": "2",
+            "time": "TR 10:15AM",
             "teacher": "Brother Christensen"
         },
         {
             "name" : "Intro to Cloud Computing",
             "code": "ITM 101",
-            "section": "2",
-            "time": "TR 10:15AM",
+            "section": "1",
+            "time": "TR 3:15PM",
             "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "Intro to Cloud Computing",
+            "code": "ITM 101",
+            "section": "3",
+            "time": "TR 2:00PM",
+            "teacher": "Brother Christensen"
+        },
+        {
+            "name" : "SQL",
+            "code": "ITM 220",
+            "section": "2",
+            "time": "MWF 12:45PM",
+            "teacher": "Brother Miller"
+        },
+        {
+            "name" : "SQL",
+            "code": "ITM 220",
+            "section": "3",
+            "time": "MWF 2:00PM",
+            "teacher": "Brother Clark"
         }
     ]
 }
